@@ -2,19 +2,21 @@ html, body {
   height: 100%; }
 
 /*all*/
+.black {
+  color: #374054; }
+
 .lead-nav {
-  background: #2C2191; }
+  background: #2c2191; }
 
 #lead {
   position: relative;
   min-height: 100%;
-  background: #231c69; }
+  background: #261969; }
 
 .heading {
-  color: #fff; }
+  font-size: 52px; }
 
 .lead-write {
-  color: #fff;
   font-size: 24px;
   white-space: pre-line; }
 
@@ -42,5 +44,15 @@ html, body {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   padding-top: 7px; }
+
+.skill-heading {
+  font-size: 38px; }
+
+.skills-card {
+  padding: 5px 3px 0 3px; }
+
+.skills-img {
+  height: 100px;
+  width: 100px; }
 
 /*# sourceMappingURL=style.css.map */

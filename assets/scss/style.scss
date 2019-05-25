@@ -3,21 +3,22 @@ html,body{
 }
 
 /*all*/
-
+.black{
+    color: #374054;
+}
 
 .lead-nav{
-    background: #2C2191;
+    background: #2c2191;
 }
 #lead{
     position: relative;
     min-height: 100%;
-    background: rgb(35, 28, 105);
+    background: #261969;
 }
 .heading{
-    color: #fff;
+    font-size: 52px;
 }
 .lead-write{
-    color: #fff;
     font-size: 24px;
     white-space: pre-line;
 }
@@ -43,4 +44,15 @@ html,body{
     animation: pulsate 1.5s ease;
     animation-iteration-count: infinite;
     padding-top: 7px;
+}
+
+.skill-heading{
+    font-size: 38px;
+}
+.skills-card{
+    padding: 5px 3px 0 3px;
+}
+.skills-img{
+    height: 100px;
+    width: 100px;
 }
