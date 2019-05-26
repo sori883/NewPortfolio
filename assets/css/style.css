@@ -5,6 +5,13 @@ html, body {
 .black {
   color: #374054; }
 
+.heading {
+  font-size: 52px; }
+
+.writer {
+  white-space: pre-line; }
+
+/* lead */
 .lead-nav {
   background: #2c2191; }
 
@@ -12,13 +19,6 @@ html, body {
   position: relative;
   min-height: 100%;
   background: #261969; }
-
-.heading {
-  font-size: 52px; }
-
-.lead-write {
-  font-size: 24px;
-  white-space: pre-line; }
 
 #lead-down {
   position: absolute;
@@ -45,6 +45,7 @@ html, body {
   animation-iteration-count: infinite;
   padding-top: 7px; }
 
+/* skills */
 .skill-heading {
   font-size: 38px; }
 
@@ -53,6 +54,16 @@ html, body {
 
 .skills-img {
   height: 100px;
-  width: 100px; }
+  width: 300px; }
+
+/* experience */
+#experience {
+  background: #f2f2f5;
+  padding: 5px 0; }
+
+.experience-next {
+  font-size: 40px;
+  font-weight: 900;
+  color: #2c2191; }
 
 /*# sourceMappingURL=style.css.map */
