@@ -1,11 +1,9 @@
-html,body{
+html,
+body{
     height: 100%;
 }
 
 /*all*/
-.black{
-    color: #374054;
-}
 .heading{
     font-size: 52px;
 }
@@ -13,16 +11,17 @@ html,body{
     white-space: pre-line;
 }
 
-/* lead */
-.lead-nav{
-    background: #2c2191;
-}
-#lead{
+/* first */
+#first{
     position: relative;
     min-height: 100%;
     background: #261969;
 }
-#lead-down{
+.first-nav{
+    background: #2c2191;
+}
+
+#first-down{
     position: absolute;
     left: 0;
     right: 0;
@@ -69,3 +68,78 @@ html,body{
     font-weight: 900;
     color: #2c2191;
 }
+
+/* last */
+#last{
+    background: #261969;
+}
+
+.last-img{
+    width: 10rem;
+    height: 10rem;
+}
+
+.last-contact{
+    margin-bottom: 2px;
+    font-size: 1.2rem;
+}
+
+.last-icon{
+    padding: 0 5px
+}
+
+#contact-form{
+    margin-top: 20px;    
+}
+    #contact-form input,
+    #contact-form textarea {
+      display: block;
+      width: 95%;
+      box-sizing: border-box;
+      padding: 10px 5px;
+      border-radius: 4px;
+      border: none;
+      margin-bottom: 10px;
+      background: #191353;
+      color: #fff;
+      -webkit-transition: 0.5s ease all;
+      -o-transition: 0.5s ease all;
+      transition: 0.5s ease all; }
+      #contact-form input::-webkit-input-placeholder,
+      #contact-form textarea::-webkit-input-placeholder {
+        color: #fff; }
+      #contact-form input:-moz-placeholder,
+      #contact-form textarea:-moz-placeholder {
+        color: #fff;
+        opacity: 1; }
+      #contact-form input::-moz-placeholder,
+      #contact-form textarea::-moz-placeholder {
+        color: #fff;
+        opacity: 1; }
+      #contact-form input:-ms-input-placeholder,
+      #contact-form textarea:-ms-input-placeholder {
+        color: #fff; }
+      #contact-form input:focus,
+      #contact-form textarea:focus {
+        outline: none;
+        background: #0c0929; }
+    #contact-form textarea {
+      height: 10rem;
+      resize: none; }
+    #contact-form button {
+      display: block;
+      width: 95%;
+      background: #fff;
+      border-radius: 4px;
+      padding: 5px 10px;
+      border: none;
+      color: #2c2191;
+      font-weight: 700;
+      -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      -webkit-transition: 0.5s ease all;
+      -o-transition: 0.5s ease all;
+      transition: 0.5s ease all; }
+      #contact-form button:hover {
+        -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }

@@ -10,39 +10,26 @@
     <title>Panda!</title>
   </head>
   <body>
-    <header id="lead">
+    <header id="first">
         <nav>
-            <div class="nav-wrapper lead-nav">
-              <a href="#!" class="brand-logo center">Logo</a>
-              <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-              <ul class="right hide-on-med-and-down">
-                <li><a href="sass.html">Sass</a></li>
-                <li><a href="badges.html">Components</a></li>
-                <li><a href="collapsible.html">Javascript</a></li>
-                <li><a href="mobile.html">Mobile</a></li>
-              </ul>
+            <div class="nav-wrapper first-nav">
+              <a href="index.html" class="brand-logo center">This is ME</a>
             </div>
           </nav>
-          <ul class="sidenav" id="mobile-nav">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">Javascript</a></li>
-            <li><a href="mobile.html">Mobile</a></li>
-          </ul>
           <div class="container">
-            <h2 class="heading center white-text">Who I am</h1>
+            <h2 class="heading center white-text">Who I am</h2>
             <div class="row">
-              <div class="lead-img center col s12">
+              <div class="first-img center col s12">
                 <!--<img src="assets/img/icon.svg">-->
                 <p class="writer flow-text white-text">
                   -Hello, My name is Sorinaji.
-                  I'm an back-end developer
+                  I'm an back-end developer.
 
                   I like to discover and to learn things every day,
                   I like to discover and to learn things every day,
                   I like to discover and to learn things every day,
                 </p>
-                <div id="lead-down" class="center">
+                <div id="first-down" class="center">
                     <span class="down-circle"><i class="fa fa-chevron-down down-icon" aria-hidden="true"></i></span>
                   </div>
               </div>
@@ -252,8 +239,7 @@
                   <span class="card-title">I joined my company</span>
                   <p>2017 - Today</p>
                   <p class="writer">
-                      I joined a company with a new graduate.
-                      After 3 months of Java training, I mainly performed maintenance and operation of Windows Server.
+                      I joined a company with a new graduate.After 3 months of Java training, I mainly performed maintenance and operation of Windows Server.
                       Besides, I also developing web apps.
                   </p>
                 </div>
@@ -266,27 +252,33 @@
         </div>
       </section>
 
-      <footer class="page-footer">
+      <footer id="last" class="page-footer">
           <div class="container">
             <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              <div class="col l6 m6 s12">
+                <h5 class="white-text">Get in Touch</h5>
+                <div id="contact-form">
+                    <form method="post" action="/assets/php/script.php">
+                        <input type="email" name="Email" placeholder="Email address" required>
+                        <textarea name="message" placeholder="Your message" required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
               </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Contact</h5>
+              <div class="col l4 offset-l2 m6 s12">
+                <h5 class="white-text">Find me on the web!</h5>
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                  <li class="last-contact"><a class="grey-text text-lighten-3" href="https://github.com/sori883" tartget="_blank"><i class="fa fa-github last-icon" aria-hidden="true"></i>GitHub</a></li>
+                  <li class="last-contact"><a class="grey-text text-lighten-3" href="https://www.youtube.com/channel/UCc-IKx00Rl62xSzmiLik-Bw/featured?disable_polymer=1" tartget="_blank"><i class="fa fa-youtube last-icon" aria-hidden="true"></i>YouTube</a></li>
+                  <li class="last-contact"><a class="grey-text text-lighten-3" href="https://twitter.com/sorinaji" tartget="_blank"><i class="fa fa-twitter last-icon" aria-hidden="true"></i>Twitter</a></li>
+                  <li class="last-contact"><a class="grey-text text-lighten-3" href="https://inframenma.com/" tartget="_blank"><i class="fa fa-wordpress last-icon" aria-hidden="true"></i>inframenma</a></li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="footer-copyright">
-            <div class="container">
-            © 2019 Copyright Sorinaji
+            <div class="container center">
+            © 2019 Copyright Sorinaji.
             </div>
           </div>
         </footer>
