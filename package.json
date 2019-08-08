@@ -8,19 +8,22 @@
   ],
   "main": "assets/",
   "scripts": {
-    "start": "",
-    "css-main": "npm-run-all css-lint css-compile css-prefix css-minify css-copy",
-    "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true src/scss/ -o dist/css/",
-    "css-prefix": "postcss --config build/postcss.config.js --replace \"dist/css/*.css\" \"!dist/css/*.min.css\"",
-    "css-minify": "cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/css/style.min.css dist/css/style.css",
-    "css-copy": "shx mkdir -p public/assets/css && shx cp -r dist/css/*.min.css public/assets/css",
-    "css-lint": "stylelint \"assets/scss/*.scss\"",
-    "js-main": "npm-run-all js-compile js-minify js-copy",
-    "js-compile": "./node_modules/.bin/browserify js/script.js -o dist/js/script.js",
-    "js-minify": "uglifyjs dist/js/script.js -c --source-map --output dist/js/script.min.js",
-    "js-copy": "shx mkdir -p public/assets/js && shx cp -r dist/js/*.min.js public/assets/js",
-    "watch-css": "nodemon --watch scss/ --ext scss --exec \"npm run css-main\"",
-    "server": "browser-sync start --server ./ --startPath public"
+    "start": "npm run watch",
+    "css": "npm-run-all css-*",
+    "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true src/assets/scss/ -o src/assets/css/",
+    "css-prefix": "postcss --config build/postcss.config.js --replace \"src/assets/css/*.css\" \"!src/assets/css/*.min.css\"",
+    "css-minify": "cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output src/assets/css/style.min.css src/assets/css/style.css",
+    "css-lint": "stylelint \"src/assets/scss/*.scss\"",
+    "js": "npm-run-all js-*",
+    "js-minify": "shx mkdir -p src/assets/js && uglifyjs src/assets/js/script.js -c --source-map --output src/assets/js/script.min.js",
+    "watch": "npm-run-all --parallel watch-*",
+    "watch-css": "nodemon --watch src/assets/scss/ --ext scss --exec \"npm run css\"",
+    "watch-js": "nodemon --watch src/assets/js/ --ext js --exec \"npm run js\"",
+    "watch-server": "browser-sync start --server ./ --startPath src/",
+    "release": "npm-run-all --parallel release-*",
+    "release-static": "cpx \"src/*\" \"public/\" && cpx \"src/assets/{img}/*\" \"public/assets/\"",
+    "release-css": "cpx \"src/assets/css/*min.css\" \"public/assets/css/\"",
+    "release-js": "cpx \"src/assets/js/*min.js\" \"public/assets/js/\""
   },
   "repository": {
     "type": "git",
@@ -38,10 +41,8 @@
   "devDependencies": {
     "autoprefixer": "^9.6.1",
     "browser-sync": "^2.26.7",
-    "browserify": "^16.4.0",
     "clean-css-cli": "^4.3.0",
-    "express": "^4.17.1",
-    "jquery": "^3.4.1",
+    "cpx": "^1.5.0",
     "node-sass": "^4.12.0",
     "nodemon": "^1.19.1",
     "npm-run-all": "^4.1.5",
@@ -50,5 +51,6 @@
     "stylelint": "^10.1.0",
     "stylelint-config-twbs-bootstrap": "^0.4.0",
     "uglify-js": "^3.6.0"
-  }
+  },
+  "dependencies": {}
 }

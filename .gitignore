@@ -1,2 +1,8 @@
 # node.js files
 /node_modules
+
+# OS file
+.DS_Store
+
+#public file
+/public
