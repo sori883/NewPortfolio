@@ -1,89 +1,82 @@
+// 全体設定
 html,
-body{
-    height: 100%;
+body {
+  height: 100%;// ファーストビューが崩れるため
 }
 
-/*all*/
-.heading{
-    font-size: 52px;
-}
-.writer{
-    white-space: pre-line;
+// 全体で使用するやつ
+.heading {
+  font-size: 52px;
 }
 
-/* first */
-#first{
-    position: relative;
-    min-height: 100%;
-    background: #261969;
-}
-.first-nav{
-    background: #2c2191;
+.writer {
+  white-space: pre-line;
 }
 
-#first-down{
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    bottom: 15px;
-    color: #fff;
-}
-.down-circle{
-      cursor: pointer;
-      display: block;
-      margin: 0 auto;
-      width: 35px;
-      height: 35px;
-      border-radius: 50%;
-      border: 3px solid #6558d9;
-      text-align: center;
-}
-.down-icon{
-    animation: pulsate 1.5s ease;
-    animation-iteration-count: infinite;
-    padding-top: 7px;
+// ファーストビュー
+#first {
+  position: relative;
+  min-height: 100%;
+  background: #261969;
 }
 
-/* skills */
-.skill-heading{
-    font-size: 38px;
-}
-.skills-card{
-    padding: 5px 3px 0 3px;
-}
-.skills-img{
-    height: 100px;
-    width: 300px;
+.first-nav {
+  background: #2c2191;
 }
 
-/* experience */
-#experience{
-    background: #f2f2f5;
-    padding: 5px 0;
+#first-down {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  bottom: 15px;
+  color: #fff;
+  font-size: 2rem;
+}
+// スキル一覧
+.skill-heading {
+  font-size: 38px;
 }
 
-.experience-next{
-    font-size: 40px;
-    font-weight: 900;
-    color: #2c2191;
+.skills-card {
+  padding: 5px 3px 0 3px;
 }
 
-/* last */
-#last{
-    background: #261969;
+.skills-img {
+  height: 100px;
+  width: 300px;
 }
 
-.last-img{
-    width: 10rem;
-    height: 10rem;
+// 経歴
+#experience {
+  background: #f2f2f5;
+  padding: 5px 0;
 }
 
-.last-contact{
-    margin-bottom: 2px;
-    font-size: 1.2rem;
+.experience-next {
+  font-size: 40px;
+  font-weight: 900;
+  color: #2c2191;
 }
 
-.last-icon{
-    padding: 0 5px
+// フッター
+#last {
+  background: #261969;
 }
+
+.last-img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.last-contact {
+  margin-bottom: 2px;
+  font-size: 1.2rem;
+}
+
+.last-icon {
+  margin-right: 5px;
+}
+
+// footerのフォント
+@import "font-icon";
