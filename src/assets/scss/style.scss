@@ -2,11 +2,16 @@
 html,
 body {
   height: 100%;// ファーストビューが崩れるため
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
 }
 
 // 全体で使用するやつ
 .heading {
-  font-size: 52px;
+  font-size: 5.2rem;
 }
 
 .writer {
@@ -18,10 +23,25 @@ body {
   position: relative;
   min-height: 100%;
   background: #261969;
+  font-size: 3rem;
 }
 
 .first-nav {
   background: #2c2191;
+}
+
+.first-img {
+  height: 20rem;
+  padding: 1.5rem;
+}
+
+.first-img-around {
+  margin: 0 auto;
+  height: 20rem;
+  width: 20rem;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
 }
 
 #first-down {
@@ -31,11 +51,11 @@ body {
   z-index: 10;
   bottom: 15px;
   color: #fff;
-  font-size: 2rem;
+  font-size: 5rem;
 }
 // スキル一覧
 .skill-heading {
-  font-size: 38px;
+  font-size: 3.8rem;
 }
 
 .skills-card {
@@ -54,7 +74,7 @@ body {
 }
 
 .experience-next {
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: 900;
   color: #2c2191;
 }
@@ -71,7 +91,6 @@ body {
 
 .last-contact {
   margin-bottom: 2px;
-  font-size: 1.2rem;
 }
 
 .last-icon {
