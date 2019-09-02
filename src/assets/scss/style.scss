@@ -1,89 +1,101 @@
+// 全体設定
 html,
-body{
-    height: 100%;
+body {
+  height: 100%;// ファーストビューが崩れるため
+  font-size: 62.5%;
 }
 
-/*all*/
-.heading{
-    font-size: 52px;
-}
-.writer{
-    white-space: pre-line;
+body {
+  font-size: 2rem;
 }
 
-/* first */
-#first{
-    position: relative;
-    min-height: 100%;
-    background: #261969;
-}
-.first-nav{
-    background: #2c2191;
+// 全体で使用するやつ
+.heading {
+  font-size: 5.2rem;
 }
 
-#first-down{
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    bottom: 15px;
-    color: #fff;
-}
-.down-circle{
-      cursor: pointer;
-      display: block;
-      margin: 0 auto;
-      width: 35px;
-      height: 35px;
-      border-radius: 50%;
-      border: 3px solid #6558d9;
-      text-align: center;
-}
-.down-icon{
-    animation: pulsate 1.5s ease;
-    animation-iteration-count: infinite;
-    padding-top: 7px;
+.writer {
+  white-space: pre-line;
 }
 
-/* skills */
-.skill-heading{
-    font-size: 38px;
-}
-.skills-card{
-    padding: 5px 3px 0 3px;
-}
-.skills-img{
-    height: 100px;
-    width: 300px;
+// ファーストビュー
+#first {
+  position: relative;
+  min-height: 100%;
+  background: #261969;
+  font-size: 3rem;
 }
 
-/* experience */
-#experience{
-    background: #f2f2f5;
-    padding: 5px 0;
+.first-nav {
+  background: #2c2191;
 }
 
-.experience-next{
-    font-size: 40px;
-    font-weight: 900;
-    color: #2c2191;
+.first-img {
+  height: 20rem;
+  padding: 1.5rem;
 }
 
-/* last */
-#last{
-    background: #261969;
+.first-img-around {
+  margin: 0 auto;
+  height: 20rem;
+  width: 20rem;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
 }
 
-.last-img{
-    width: 10rem;
-    height: 10rem;
+#first-down {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  bottom: 15px;
+  color: #fff;
+  font-size: 5rem;
+}
+// スキル一覧
+.skill-heading {
+  font-size: 3.8rem;
 }
 
-.last-contact{
-    margin-bottom: 2px;
-    font-size: 1.2rem;
+.skills-card {
+  padding: 5px 3px 0 3px;
 }
 
-.last-icon{
-    padding: 0 5px
+.skills-img {
+  height: 100px;
+  width: 300px;
 }
+
+// 経歴
+#experience {
+  background: #f2f2f5;
+  padding: 5px 0;
+}
+
+.experience-next {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #2c2191;
+}
+
+// フッター
+#last {
+  background: #261969;
+}
+
+.last-img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.last-contact {
+  margin-bottom: 2px;
+}
+
+.last-icon {
+  margin-right: 5px;
+}
+
+// footerのフォント
+@import "font-icon";

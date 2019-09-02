@@ -21,7 +21,8 @@
     "watch-js": "nodemon --watch src/assets/js_orijin/ --ext js --exec \"npm run js\"",
     "watch-server": "browser-sync start --server ./ --startPath src/",
     "release": "npm-run-all css-* js-* release-*",
-    "release-static": "cpx \"src/*\" \"public/\" && cpx \"src/assets/img/*\" \"public/assets/img/\"",
+    "release-clean": "shx rm -rf public",
+    "release-static": "cpx \"src/*\" \"public/\" && cpx \"src/.*\" \"public/\" && cpx \"src/assets/img/*\" \"public/assets/img/\" && cpx \"src/assets/fonts/*\" \"public/assets/fonts/\"",
     "release-css": "cpx \"src/assets/css/*min.css\" \"public/assets/css/\"",
     "release-js": "cpx \"src/assets/js/*min.js\" \"public/assets/js/\""
   },
