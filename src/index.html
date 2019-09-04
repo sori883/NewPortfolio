@@ -1,11 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<title>Panda!</title>
+
+
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" href="./assets/css/style.min.css">
+<link href="https://fonts.googleapis.com/css?family=Capriola&display=swap" rel="stylesheet">
+<link href="./assets/css/materialize.min.css" rel="stylesheet">
+<link href="./assets/css/style.min.css" rel="stylesheet">
+
 <meta property="og:url" content="sori883.com">
 <meta property="og:type" content="portfolio"> 
 <meta property="og:title" content="panda!">
@@ -13,34 +19,115 @@
 <meta property="og:site_name" content="portfolio">
 <meta property="og:image" content="./assets/img/ogimage.jpg">
 <meta name="twitter:card" content="summary">
-<title>Panda!</title>
 </head>
 <body>
   <header id="first">
+    <div class="navbar-fixed">
     <nav>
-      <div class="nav-wrapper first-nav"><a href="index.html" class="brand-logo center">This is ME</a></div>
+      <div class="nav-wrapper first-nav">
+        <div class="container">
+        <a href="index.html" class="brand-logo black-text left"><img class="brand-img" src="./assets/img/icon.svg"></a>
+        <ul class="right hide-on-med-and-down">
+          <li class="nav-item"><a class="black-text" href="#">私という人間について</a></li>
+          <li class="nav-item"><a class="black-text" href="#">ポートフォリオ</a></li>
+          <li class="nav-item"><a class="black-text" href="#">連絡先</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+        </div>
+      </div>
     </nav>
-    <div class="container">
-      <h2 class="heading center white-text">Who I am</h2>
-      <div class="row">
-        <div class="center col s12">
-        <div class="first-img-around"><img class="first-img" src="assets/img/icon.svg"></div>
-        <p class="writer white-text">
-          -Hello, My name is Sorinaji.
-          I'm an back-end developer.
+    </div>
 
-          I like to discover and to learn things every day.
-        </p>
-        <div id="first-down" class="center"><i class="icon-circle-down"></i></div>
+    <ul id="nav-mobile" class="sidenav">
+      <li><a href="#">私という人間について</a></li>
+      <li><a href="#">ポートフォリオ</a></li>
+      <li><a href="#">連絡先</a></li>
+    </ul>
+
+    <div class="valign-wrapper first-card-height">
+    <div class="container">
+      <div class="row">
+          <div class="col s12 m12 l12">
+              <div class="card first-card">
+                <div class="card-content capriola">
+                  <h2 class="center">SoriLob</h2>
+                  <p class="center">
+                    BACKEND ENGINEER<br>
+                    &<br>
+                    SERVER ENGINEER
+                  </p>
+                </div>
+              </div>
+            </div>
       </div>
     </div>
+  </div>
+  <div class="first-down center"><i class="first-down-icon material-icons">keyboard_arrow_down</i></div>
   </header>
 
+  <section id="about">
+    <h2 class="heading capriola">About me</h2>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col s12 m12 offset-l2 l3">
+          <div class="about-img-around"><img class="about-img" src="assets/img/icon.svg"></div>
+        </div>
+        <div class="col s12 m12 l7">
+          <p class="about-write">
+            -こんにちは。Sorinajiと申します。<br>
+            新卒でこの業界に入り、Androidアプリ作成から始まり、Webアプリの作成、<br class="about-br-hidden">
+            仮想サーバの構築、社内クライアント端末の保守運用を経て<br class="about-br-hidden">
+            現在はSE兼PGとしてWebサイト作成をしております。
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="about-details">
+          <div class="col s6 m6 offset-l2 l2">
+              <div class="card">
+                  <div class="card-image">
+                      <img src="assets/img/mysql.svg">
+                      <span class="card-title black-text">趣味</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col s6 m6 l2">
+                  <div class="card">
+                      <div class="card-image">
+                          <img src="assets/img/mysql.svg">
+                          <span class="card-title black-text">趣味</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col s6 m6 l2">
+                      <div class="card">
+                          <div class="card-image">
+                              <img src="assets/img/mysql.svg">
+                              <span class="card-title black-text">趣味</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col s6 m6 l2">
+                          <div class="card">
+                              <div class="card-image">
+                                  <img src="assets/img/mysql.svg">
+                                  <span class="card-title black-text">趣味</span>
+                              </div>
+                            </div>
+                          </div>
+          </div>
+      </div>
+    </div>
+
+    </section>
+
   <section id="skills">
-    <h2 class="heading center">Skills</h2>
+    <h2 class="heading capriola">Skills</h2>
     <div class="container">
     <div class="row">
-      <div class="skill-front s12 m12 l12">
+      <div class="skill-front col s12 m12 l12">
       <h3 class="skill-heading">Languages</h3>
       <div class="col s6 m3 l2">
       <div class="card">
@@ -125,7 +212,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="skill-front s12 m12 l12">
+      <div class="skill-front col s12 m12 l12">
       <h3 class="skill-heading">Datebase</h3>
       </div>
       <div class="col s6 m4 l2">
@@ -190,7 +277,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="skill-front s12 m12 l12">
+      <div class="skill-front col s12 m12 l12">
       <h3 class="skill-heading">Server</h3>
       </div>
       <div class="col s6 m4 l2">
@@ -229,7 +316,7 @@
   </section>
 
   <section id="experience">
-  <h2 class="heading center">Experience</h2>
+  <h2 class="heading capriola">Experience</h2>
   <div class="container">
     <div class="row">
     <div class="experience-card col s12 m12 l12">
@@ -243,8 +330,8 @@
         </p>
       </div>
       </div>
-      <div class="experience-next center">
-        <i class="icon-arrow-down"></i>
+      <div class="center">
+        <i class="material-icons experience-next">arrow_downward</i>
       </div>
     </div>
     </div>
@@ -257,22 +344,23 @@
       <div class="col l12 m12 s12">
       <h5 class="white-text">Find me on the web!</h5>
       <ul>
-        <li class="last-contact"><a class="grey-text text-lighten-3" href="https://github.com/sori883" tartget="_blank"><i class="icon-github last-icon"></i>GitHub</a></li>
-        <li class="last-contact"><a class="grey-text text-lighten-3" href="https://www.youtube.com/channel/UCc-IKx00Rl62xSzmiLik-Bw/featured?disable_polymer=1" tartget="_blank"><i class="icon-youtube last-icon"></i>YouTube</a></li>
-        <li class="last-contact"><a class="grey-text text-lighten-3" href="https://twitter.com/sorinaji" tartget="_blank"><i class="icon-twitter last-icon"></i>Twitter</a></li>
-        <li class="last-contact"><a class="grey-text text-lighten-3" href="https://inframenma.com/" tartget="_blank"><i class="icon-wordpress last-icon"></i>inframenma</a></li>
+        <li class="last-contact"><a class="grey-text text-lighten-3" href="https://github.com/sori883" tartget="_blank"><i class="icomoon icon-github last-icon"></i>GitHub</a></li>
+        <li class="last-contact"><a class="grey-text text-lighten-3" href="https://www.youtube.com/channel/UCc-IKx00Rl62xSzmiLik-Bw/featured?disable_polymer=1" tartget="_blank"><i class="icomoon icon-youtube last-icon"></i>YouTube</a></li>
+        <li class="last-contact"><a class="grey-text text-lighten-3" href="https://twitter.com/sorinaji" tartget="_blank"><i class="icomoon icon-twitter last-icon"></i>Twitter</a></li>
+        <li class="last-contact"><a class="grey-text text-lighten-3" href="https://inframenma.com/" tartget="_blank"><i class="icomoon icon-wordpress last-icon"></i>inframenma</a></li>
       </ul>
       </div>
     </div>
     </div>
     <div class="footer-copyright">
-    <div class="container center">
-        &copy; 2019 Copyright Sorinaji.
-    </div>
+    <div class="container center"><span class="copyright">&copy; 2019 Copyright Sorinaji.</span></div>
     </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="./assets/js/script.min.js"></script>
-</body>
+  <script src="./assets/js/materialize.min.js"></script>
+  <script src="./assets/js/script.min.js"></script>
+  <script>
+  </script>
+  
+  </body>
 </html>

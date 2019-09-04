@@ -1,58 +1,117 @@
+@charset "UTF-8";
+body {
+  font-size: 1.4rem;
+  background: #fff;
+  font-family: -apple-system, "BlinkMacSystemFont", "Helvetica Neue", Helvetica, "Arial", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+p {
+  -webkit-margin-before: 0;
+  margin-block-start: 0;
+}
+
 html,
 body {
   height: 100%;
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 2rem;
 }
 
 .heading {
-  font-size: 5.2rem;
-}
-
-.writer {
-  white-space: pre-line;
+  text-align: center;
+  font-size: 4rem;
 }
 
 #first {
   position: relative;
-  min-height: 100%;
-  background: #261969;
-  font-size: 3rem;
+  min-height: 100vh;
+  background: #F3C0AB;
+  font-size: 2rem;
 }
 
 .first-nav {
-  background: #2c2191;
+  background: #fff;
 }
 
-.first-img {
-  height: 20rem;
+.brand-img {
+  max-height: 56px;
+}
+
+@media only screen and (min-width: 601px) {
+  .brand-img {
+    min-height: 64px;
+  }
+}
+
+.first-card-height {
+  height: calc(100vh - 200px);
+}
+
+.first-card {
+  background: #ffffffc4;
+  align-items: center;
+}
+
+.first-down {
+  position: relative;
+  bottom: 15px;
+  color: #fff;
+}
+
+.first-down-icon {
+  font-size: 4rem;
+  cursor: pointer;
+  color: #DF81A2;
+  border: 0.3rem solid #DF81A2;
+  border-radius: 50%;
+}
+
+#about {
+  min-height: 100vh;
+  padding: 6.4rem 0;
+  background: url("../img/bg.jpg") fixed;
+}
+
+.about-img {
+  height: 14rem;
   padding: 1.5rem;
 }
 
-.first-img-around {
-  margin: 0 auto;
-  height: 20rem;
-  width: 20rem;
+.about-img-around {
+  margin-top: 3rem;
+  margin-right: auto;
+  margin-left: auto;
+  height: 14rem;
+  width: 14rem;
   background: #fff;
   border-radius: 50%;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
-#first-down {
-  position: absolute;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  bottom: 15px;
-  color: #fff;
-  font-size: 5rem;
+.about-write {
+  margin-top: 3rem;
+  font-size: 1.4rem;
+  padding: 0 1rem;
+}
+
+@media (max-width: 1000px) {
+  .about-write {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .about-br-hidden {
+    display: none;
+  }
+}
+
+.about-details {
+  margin-top: 6rem;
+}
+
+#skills {
+  padding: 6.4rem 0;
 }
 
 .skill-heading {
-  font-size: 3.8rem;
+  font-size: 3rem;
 }
 
 .skills-card {
@@ -67,6 +126,7 @@ body {
 #experience {
   background: #f2f2f5;
   padding: 5px 0;
+  padding: 6.4rem 0;
 }
 
 .experience-next {
@@ -92,6 +152,14 @@ body {
   margin-right: 5px;
 }
 
+.copyright {
+  font-size: 1.2rem;
+}
+
+.capriola {
+  font-family: 'Capriola', sans-serif;
+}
+
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon.eot?r2rv7w");
@@ -100,7 +168,7 @@ body {
   font-style: normal;
 }
 
-i {
+.icomoon {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   font-style: normal;

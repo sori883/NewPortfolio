@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+body {
+  font-size: 1.4rem;
+  background: #fff;
+  font-family: -apple-system, "BlinkMacSystemFont", "Helvetica Neue", Helvetica, "Arial", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+// <p>の上にあるマージンを削除
+p {
+  margin-block-start: 0;
+}

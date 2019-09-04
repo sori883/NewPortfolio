@@ -1,101 +1,10 @@
-// 全体設定
-html,
-body {
-  height: 100%;// ファーストビューが崩れるため
-  font-size: 62.5%;
-}
+@import "variables";
 
-body {
-  font-size: 2rem;
-}
+// reboot
+@import "reboot";
 
-// 全体で使用するやつ
-.heading {
-  font-size: 5.2rem;
-}
+//layout style
+@import "layout";
 
-.writer {
-  white-space: pre-line;
-}
-
-// ファーストビュー
-#first {
-  position: relative;
-  min-height: 100%;
-  background: #261969;
-  font-size: 3rem;
-}
-
-.first-nav {
-  background: #2c2191;
-}
-
-.first-img {
-  height: 20rem;
-  padding: 1.5rem;
-}
-
-.first-img-around {
-  margin: 0 auto;
-  height: 20rem;
-  width: 20rem;
-  background: #fff;
-  border-radius: 50%;
-  box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
-}
-
-#first-down {
-  position: absolute;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  bottom: 15px;
-  color: #fff;
-  font-size: 5rem;
-}
-// スキル一覧
-.skill-heading {
-  font-size: 3.8rem;
-}
-
-.skills-card {
-  padding: 5px 3px 0 3px;
-}
-
-.skills-img {
-  height: 100px;
-  width: 300px;
-}
-
-// 経歴
-#experience {
-  background: #f2f2f5;
-  padding: 5px 0;
-}
-
-.experience-next {
-  font-size: 4rem;
-  font-weight: 900;
-  color: #2c2191;
-}
-
-// フッター
-#last {
-  background: #261969;
-}
-
-.last-img {
-  width: 10rem;
-  height: 10rem;
-}
-
-.last-contact {
-  margin-bottom: 2px;
-}
-
-.last-icon {
-  margin-right: 5px;
-}
-
-// footerのフォント
-@import "font-icon";
+// font & font-icon
+@import "font";

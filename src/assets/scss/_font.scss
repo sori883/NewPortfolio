@@ -1,3 +1,7 @@
+.capriola {
+  font-family: 'Capriola', sans-serif;
+}
+
 @font-face {
   font-family: 'icomoon';
   src:  url('../fonts/icomoon.eot?r2rv7w');
@@ -9,7 +13,7 @@
   font-style: normal;
 }
 
-i {
+.icomoon {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   font-style: normal;
