@@ -33,6 +33,14 @@ body {
   }
 }
 
+.nav-toggle {
+  color: $sub-color;
+}
+
+.sidenav {
+  padding-top: 3rem;
+}
+
 .first-card-height {
   height: calc(100vh - 200px);
 }
@@ -50,7 +58,7 @@ body {
 
 .first-down-icon{
   font-size: 3rem;
-  padding: 1rem;
+  padding: 0.6rem 0.8rem;
   cursor: pointer;
   color: $sub-color;
   border: .3rem solid $sub-color;
