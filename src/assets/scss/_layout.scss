@@ -49,7 +49,8 @@ body {
 }
 
 .first-down-icon{
-  font-size: 4rem;
+  font-size: 3rem;
+  padding: 1rem;
   cursor: pointer;
   color: $sub-color;
   border: .3rem solid $sub-color;
@@ -87,7 +88,7 @@ body {
 @media (max-width: 1000px) {
   .about-write {
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .about-br-hidden {
@@ -96,7 +97,12 @@ body {
 }
 
 .about-details {
-  margin-top: 6rem;
+  margin-top: 8rem;
+}
+
+.about-link {
+  font-size: 5rem;
+  color: #000;
 }
 
 #skills{
