@@ -20,6 +20,10 @@ body {
   font-size: 4rem;
 }
 
+.summary {
+  font-size: 1.1rem;
+}
+
 #first {
   position: relative;
   min-height: 100vh;
@@ -137,37 +141,79 @@ body {
   width: 300px;
 }
 
-#experience {
-  background: #f2f2f5;
+#exp {
+  background: url("../img/bg.jpg") fixed;
   padding: 5px 0;
   padding: 6.4rem 0;
+  font-size: 16px;
 }
 
-.experience-next {
-  font-size: 4rem;
-  font-weight: 900;
-  color: #2c2191;
+.exp-timeline {
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.exp-timeline:before {
+  position: absolute;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  content: '';
+  background: #DF81A2;
+}
+
+.timeline-item {
+  margin-left: 40px;
+}
+
+.timeline-year {
+  font-family: serif;
+  font-size: 7rem;
+  font-weight: 500;
+  position: relative;
+  margin: 0;
+  letter-spacing: 3px;
+  color: rgba(233, 30, 98, 0.301);
+}
+
+.timeline-year::before {
+  position: absolute;
+  top: 50%;
+  left: -45px;
+  width: 15px;
+  height: 15px;
+  content: '';
+  border: 3px solid #e91e63;
+  background: #fff;
+}
+
+.timeline-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: -70px;
+  margin-bottom: 10px;
+  color: #880e4f;
+}
+
+.timeline-desc {
+  font-size: 1rem;
+  line-height: 20px;
+  padding-left: 8px;
+  border-left: 2px solid #e91e63;
 }
 
 #last {
-  background: #261969;
+  background: #DF81A2;
 }
 
-.last-img {
-  width: 10rem;
-  height: 10rem;
-}
-
-.last-contact {
-  margin-bottom: 2px;
-}
-
-.last-icon {
-  margin-right: 5px;
+.last-footer {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
 }
 
 .copyright {
   font-size: 1.2rem;
+  color: #fff;
 }
 
 .capriola {

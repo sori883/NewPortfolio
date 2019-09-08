@@ -1,0 +1,53 @@
+#first {
+  position: relative;
+  min-height: 100vh;
+  background: #F3C0AB;
+  font-size: 2rem;
+}
+
+.first-nav {
+  background: #fff;
+}
+
+.brand-img {
+  max-height: 56px;
+}
+
+// brandアイコンの位置調整
+@media only screen and (min-width: 601px) {
+  .brand-img {
+    min-height: 64px;
+  }
+}
+
+.nav-toggle {
+  color: $sub-color;
+}
+
+.sidenav {
+  padding-top: 3rem;
+}
+
+.first-card-height {
+  height: calc(100vh - 200px);
+}
+
+.first-card {
+  background: #ffffffc4;
+  align-items: center;
+}
+
+.first-down {
+  position: relative;
+  bottom: 15px;
+  color: #fff;
+}
+
+.first-down-icon{
+  font-size: 3rem;
+  padding: 0.6rem 0.8rem;
+  cursor: pointer;
+  color: $sub-color;
+  border: .3rem solid $sub-color;
+  border-radius: 50%;
+}

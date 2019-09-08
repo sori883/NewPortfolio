@@ -1,0 +1,60 @@
+#exp {
+  background: url("../img/bg.jpg") fixed;
+  padding: 5px 0;
+  padding: $section-spacer;
+  font-size: 16px;
+}
+
+.exp-timeline {
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.exp-timeline:before {
+  position: absolute;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  content: '';
+  background: $sub-color;
+}
+
+.timeline-item {
+  margin-left: 40px;
+}
+
+.timeline-year {
+  font-family: serif;
+  font-size: 7rem;
+  font-weight: 500;
+  position: relative;
+  margin: 0;
+  letter-spacing: 3px;
+  color: rgba(233, 30, 98, 0.301);
+}
+
+.timeline-year::before {
+  position: absolute;
+  top: 50%;
+  left: -45px;
+  width: 15px;
+  height: 15px;
+  content: '';
+  border: 3px solid #e91e63;
+  background: #fff;
+}
+
+.timeline-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: -70px;
+  margin-bottom: 10px;
+  color: #880e4f;
+}
+
+.timeline-desc {
+  font-size: 1rem;
+  line-height: 20px;
+  padding-left: 8px;
+  border-left: 2px solid #e91e63;
+}

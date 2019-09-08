@@ -1,0 +1,47 @@
+#about {
+  min-height: 100vh;
+  padding: $section-spacer;
+  background: url("../img/bg.jpg") fixed;
+}
+
+.about-img {
+  height: 14rem;
+  padding: 1.5rem;
+}
+
+.about-img-around {
+  margin-top: 3rem;
+  margin-right: auto;
+  margin-left: auto;
+  height: 14rem;
+  width: 14rem;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+}
+
+.about-write {
+  margin-top: 3rem;
+  font-size: 1.4rem;
+  padding: 0 1rem;
+}
+
+@media (max-width: 1000px) {
+  .about-write {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .about-br-hidden {
+    display: none;
+  }
+}
+
+.about-details {
+  margin-top: 8rem;
+}
+
+.about-link {
+  font-size: 5rem;
+  color: #000;
+}

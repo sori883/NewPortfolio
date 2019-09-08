@@ -1,167 +1,24 @@
-// 全体設定
 html,
 body {
   height: 100%;// ファーストビューが崩れるため
 }
 
-// 全体で使用するやつ
 .heading {
   text-align: center;
   font-size: 4rem;
 }
 
-// ファーストビュー
-#first {
-  position: relative;
-  min-height: 100vh;
-  background: #F3C0AB;
-  font-size: 2rem;
+.summary {
+  font-size: 1.1rem;
 }
 
-.first-nav {
-  background: #fff;
-}
-
-.brand-img {
-  max-height: 56px;
-}
-
-// navbarにアイコンを表示した時、真ん中にあるようなサイズで表示
-@media only screen and (min-width: 601px) {
-  .brand-img {
-    min-height: 64px;
-  }
-}
-
-.nav-toggle {
-  color: $sub-color;
-}
-
-.sidenav {
-  padding-top: 3rem;
-}
-
-.first-card-height {
-  height: calc(100vh - 200px);
-}
-
-.first-card {
-  background: #ffffffc4;
-  align-items: center;
-}
-
-.first-down {
-  position: relative;
-  bottom: 15px;
-  color: #fff;
-}
-
-.first-down-icon{
-  font-size: 3rem;
-  padding: 0.6rem 0.8rem;
-  cursor: pointer;
-  color: $sub-color;
-  border: .3rem solid $sub-color;
-  border-radius: 50%;
-}
-
-#about {
-  min-height: 100vh;
-  padding: $section-spacer;
-  background: url("../img/bg.jpg") fixed;
-}
-
-.about-img {
-  height: 14rem;
-  padding: 1.5rem;
-}
-
-.about-img-around {
-  margin-top: 3rem;
-  margin-right: auto;
-  margin-left: auto;
-  height: 14rem;
-  width: 14rem;
-  background: #fff;
-  border-radius: 50%;
-  box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
-}
-
-.about-write {
-  margin-top: 3rem;
-  font-size: 1.4rem;
-  padding: 0 1rem;
-}
-
-@media (max-width: 1000px) {
-  .about-write {
-    text-align: center;
-    font-size: 1.2rem;
-  }
-
-  .about-br-hidden {
-    display: none;
-  }
-}
-
-.about-details {
-  margin-top: 8rem;
-}
-
-.about-link {
-  font-size: 5rem;
-  color: #000;
-}
-
-#skills{
-  padding: $section-spacer;
-}
-
+// ヘッダー
+@import "layouts/firstview";
+// アバウト
+@import "layouts/aboutview";
 // スキル一覧
-.skill-heading {
-  font-size: 3rem;
-}
-
-.skills-card {
-  padding: 5px 3px 0 3px;
-}
-
-.skills-img {
-  height: 100px;
-  width: 300px;
-}
-
+@import "layouts/skillview";
 // 経歴
-#experience {
-  background: #f2f2f5;
-  padding: 5px 0;
-  padding: $section-spacer;
-}
-
-.experience-next {
-  font-size: 4rem;
-  font-weight: 900;
-  color: #2c2191;
-}
-
+@import "layouts/expviwe";
 // フッター
-#last {
-  background: #261969;
-}
-
-.last-img {
-  width: 10rem;
-  height: 10rem;
-}
-
-.last-contact {
-  margin-bottom: 2px;
-}
-
-.last-icon {
-  margin-right: 5px;
-}
-
-.copyright {
-  font-size: 1.2rem;
-}
+@import "layouts/lastview";

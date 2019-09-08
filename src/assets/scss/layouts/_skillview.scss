@@ -1,0 +1,17 @@
+#skills{
+  padding: $section-spacer;
+}
+
+.skill-heading {
+  font-size: 3rem;
+}
+
+.skills-card {
+  padding: 5px 3px 0 3px;
+}
+
+// スキルカードが大きすぎたので調整
+.skills-img {
+  height: 100px;
+  width: 300px;
+}
