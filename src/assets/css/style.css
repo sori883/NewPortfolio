@@ -46,7 +46,7 @@ body {
 }
 
 .nav-toggle {
-  color: #DF81A2;
+  color: #df81a2;
 }
 
 .sidenav {
@@ -72,8 +72,8 @@ body {
   font-size: 3rem;
   padding: 0.6rem 0.8rem;
   cursor: pointer;
-  color: #DF81A2;
-  border: 0.3rem solid #DF81A2;
+  color: #df81a2;
+  border: 0.3rem solid #df81a2;
   border-radius: 50%;
 }
 
@@ -143,7 +143,6 @@ body {
 
 #exp {
   background: url("../img/bg.jpg") fixed;
-  padding: 5px 0;
   padding: 6.4rem 0;
   font-size: 16px;
 }
@@ -159,7 +158,7 @@ body {
   width: 5px;
   height: 100%;
   content: '';
-  background: #DF81A2;
+  background: #df81a2;
 }
 
 .timeline-item {
@@ -202,8 +201,29 @@ body {
   border-left: 2px solid #e91e63;
 }
 
+#contact {
+  padding: 6.4rem 0;
+  font-size: 16px;
+}
+
+.contact-form {
+  margin-top: 5rem;
+}
+
+.contact-submit {
+  background-color: #df81a2;
+}
+
+.contact-submit:hover {
+  background-color: #d36f92;
+}
+
+.contact-submit:focus {
+  background-color: #d14c7b;
+}
+
 #last {
-  background: #DF81A2;
+  background: #df81a2;
 }
 
 .last-footer {
