@@ -7,6 +7,8 @@
   margin-top: 5rem;
 }
 
+// materialize form上書き
+
 .contact-submit {
   background-color: $sub-color;
 
@@ -17,5 +19,24 @@
   &:focus {
     background-color: $sub-color-highend;
   }
+}
+
+input[type=text]:not(.browser-default):focus.valid ~ label,
+input[type=email]:not(.browser-default):focus.valid ~ label,
+textarea.materialize-textarea:focus.valid ~ label {
+  color: $sub-color;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]) + label,
+input[type=email]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: $sub-color;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid $sub-color;
+  box-shadow: 0 1px 0 0 $sub-color;
 }
 

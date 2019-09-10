@@ -28,9 +28,10 @@
         <div class="container">
         <a href="index.html" class="brand-logo black-text left"><img class="brand-img" src="./assets/img/icon.svg"></a>
         <ul class="right hide-on-med-and-down">
-          <li class="nav-item"><a class="black-text" href="#">私という人間について</a></li>
-          <li class="nav-item"><a class="black-text" href="#">ポートフォリオ</a></li>
-          <li class="nav-item"><a class="black-text" href="#">連絡先</a></li>
+          <li class="nav-item"><a class="black-text" href="#about">私について</a></li>
+          <li class="nav-item"><a class="black-text" href="#skills">スキル</a></li>
+          <li class="nav-item"><a class="black-text" href="#exp">経歴</a></li>
+          <li class="nav-item"><a class="black-text" href="#contact">連絡先</a></li>
         </ul>
         <a href="#" data-target="nav-mobile" class="sidenav-trigger right nav-toggle"><i class="fas fa-bars"></i></a>
         </div>
@@ -39,9 +40,10 @@
     </div>
 
     <ul id="nav-mobile" class="sidenav">
-      <li><a href="#">私という人間について</a></li>
-      <li><a href="#">ポートフォリオ</a></li>
-      <li><a href="#">連絡先</a></li>
+      <li class="nav-item"><a class="black-text" href="#about">私について</a></li>
+      <li class="nav-item"><a class="black-text" href="#skills">スキル</a></li>
+      <li class="nav-item"><a class="black-text" href="#exp">経歴</a></li>
+      <li class="nav-item"><a class="black-text" href="#contact">連絡先</a></li>
     </ul>
 
     <div class="valign-wrapper first-card-height">
@@ -50,7 +52,7 @@
           <div class="col s12 m12 l12">
               <div class="card first-card">
                 <div class="card-content capriola">
-                  <h2 class="center">SoriLob</h2>
+                  <h2 class="center">SoriNav</h2>
                   <p class="center">
                     BACKEND ENGINEER<br>
                     &<br>
@@ -354,21 +356,21 @@
 
       <div class="col s12 m12 l4 offset-l2">
           <div class="input-field col s12">
-              <input id="name" type="text" class="validate">
+              <input id="name" type="text" class="validate" required>
               <label for="name">Name</label>
           </div>
         </div>
 
         <div class="col s12 m12 l4">
             <div class="input-field col s12">
-              <input id="email" type="email" class="validate">
+              <input id="email" type="email" class="validate" required>
               <label for="email">Email</label>
             </div>
           </div>
 
           <div class="col s12">
           <div class="input-field col s12 m12 l8 offset-l2">
-            <textarea id="textarea" class="materialize-textarea"></textarea>
+            <textarea id="textarea" class="materialize-textarea validate" required></textarea>
             <label for="textarea">Comment</label>
           </div>
         </div>
@@ -387,7 +389,7 @@
 
   <footer id="last" class="last-footer">
     <div class="footer-copyright">
-    <div class="container center"><span class="copyright">&copy; 2019 Copyright Sorinaji.</span></div>
+    <div class="container center"><span class="copyright">&copy; 2019 Sorinaji.</span></div>
     </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
