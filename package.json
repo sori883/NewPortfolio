@@ -9,6 +9,7 @@
   "main": "assets/",
   "scripts": {
     "start": "npm run watch",
+    "build": "npm-run-all css js",
     "css": "npm-run-all css-*",
     "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true src/assets/scss/ -o src/assets/css/",
     "css-prefix": "postcss --config build/postcss.config.js --replace \"src/assets/css/*.css\" \"!src/assets/css/*.min.css\"",
