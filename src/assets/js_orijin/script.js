@@ -1,4 +1,10 @@
+// aos
+// https://github.com/michalsnik/aos/tree/master
+
+AOS.init();
+
 // ファーストビューの移動アイコン
+
 $(".first-down-icon").click(function(){
   $("html,body").animate({
     scrollTop : $("#about").offset().top
@@ -6,6 +12,7 @@ $(".first-down-icon").click(function(){
 });
 
 // ページ内リンクのスクロール
+
 $('a[href^="#"]').click(function(){
   var speed = 500;
   var href= $(this).attr("href");
@@ -16,6 +23,7 @@ $('a[href^="#"]').click(function(){
 });
 
 // スライドバー
+
 $(document).ready(function(){
   $('.sidenav').sidenav();
 });
