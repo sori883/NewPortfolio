@@ -1,5 +1,6 @@
 # portfolio
 [https://sori883.com/](https://sori883.com/)  
+※現在停止中  
 
 # 初期セットアップ
 依存関係を管理するために[Node.js をダウンロードしてインストール。](https://nodejs.org/ja/)  
